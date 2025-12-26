@@ -1,0 +1,10 @@
+<resources>
+
+    <fonts>
+        <font id="HoursFont" filename="Ubuntu-Bold-70.fnt" antialias="true" />
+        <font id="MinutesFont" filename="Ubuntu-Medium-70.fnt" antialias="true" />
+        <font id="SecondsFont" filename="Ubuntu-Regular-70.fnt" antialias="true" />
+        <font id="StandardTimeFont" filename="Ubuntu-Regular-30.fnt" antialias="true" />
+    </fonts>
+
+</resources>

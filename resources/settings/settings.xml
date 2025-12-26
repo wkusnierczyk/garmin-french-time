@@ -1,0 +1,10 @@
+<settings>
+
+    <setting propertyKey="@Properties.ShowStandardTime" title="@Strings.ShowStandardTimeMenuTitle">
+        <settingConfig type="boolean" />
+    </setting>
+    <setting propertyKey="@Properties.UseFrenchFlagColors" title="@Strings.UseFrenchFlagColorsMenuTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+</settings>

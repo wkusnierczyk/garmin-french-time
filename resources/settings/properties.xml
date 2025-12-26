@@ -1,0 +1,6 @@
+<properties>
+
+    <property id="ShowStandardTime" type="boolean">false</property>
+    <property id="UseFrenchFlagColors" type="boolean">false</property>
+
+</properties>
