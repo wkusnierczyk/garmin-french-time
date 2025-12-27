@@ -6,3 +6,11 @@ resources/fonts/Ubuntu-Bold-70.png filter=lfs diff=lfs merge=lfs -text
 resources/fonts/Ubuntu-Medium-70.png filter=lfs diff=lfs merge=lfs -text
 resources/fonts/Ubuntu-Regular-70.png filter=lfs diff=lfs merge=lfs -text
 resources/fonts/Ubuntu-Regular-30.png filter=lfs diff=lfs merge=lfs -text
+resources/graphics/FrenchCapture.png filter=lfs diff=lfs merge=lfs -text
+resources/graphics/FrenchHero[[:space:]]1.png filter=lfs diff=lfs merge=lfs -text
+resources/graphics/FrenchHero[[:space:]]2.png filter=lfs diff=lfs merge=lfs -text
+resources/graphics/FrenchHero[[:space:]]3.png filter=lfs diff=lfs merge=lfs -text
+resources/graphics/FrenchHero.png filter=lfs diff=lfs merge=lfs -text
+resources/graphics/french-color.png filter=lfs diff=lfs merge=lfs -text
+resources/graphics/french-standard.png filter=lfs diff=lfs merge=lfs -text
+resources/graphics/french.png filter=lfs diff=lfs merge=lfs -text
