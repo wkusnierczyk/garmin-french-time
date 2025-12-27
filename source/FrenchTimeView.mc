@@ -26,9 +26,14 @@ class FrenchTimeView extends WatchUi.WatchFace {
         dc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight());
 
         var clockTime = System.getClockTime();
-        var hour = FrenchTime.getDecimalHours(clockTime);
-        var minutes = FrenchTime.getDecimalMinutes(clockTime);
-        var seconds = FrenchTime.getDecimalSeconds(clockTime);
+
+        var hour = clockTime.hour;
+        var minutes = clockTime.min;
+        var seconds = clockTime.sec;
+
+        var frenchHour = FrenchTime.getDecimalHours(clockTime);
+        var frenchMinutes = FrenchTime.getDecimalMinutes(clockTime);
+        var frenchSeconds = FrenchTime.getDecimalSeconds(clockTime);
 
         // For debugging only: widest possible values
         // hour = "8";
@@ -37,9 +42,9 @@ class FrenchTimeView extends WatchUi.WatchFace {
 
         var width = dc.getWidth();
         var height = dc.getHeight();
-        var hourWidth = dc.getTextWidthInPixels(hour, hoursFont);
-        var minutesWidth = dc.getTextWidthInPixels(minutes, minutesFont);
-        var secondsWidth = dc.getTextWidthInPixels(seconds, secondsFont);
+        var hourWidth = dc.getTextWidthInPixels(frenchHour, hoursFont);
+        var minutesWidth = dc.getTextWidthInPixels(frenchMinutes, minutesFont);
+        var secondsWidth = dc.getTextWidthInPixels(frenchSeconds, secondsFont);
         var totalWidth = hourWidth + minutesWidth + secondsWidth;
 
         var currentX = (width - totalWidth) / 2;
@@ -52,15 +57,15 @@ class FrenchTimeView extends WatchUi.WatchFace {
 
 
         dc.setColor(hourFontColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(currentX, centerY, hoursFont, hour, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(currentX, centerY, hoursFont, frenchHour, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
         currentX += hourWidth;
 
         dc.setColor(minutesFontColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(currentX, centerY, minutesFont, minutes, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(currentX, centerY, minutesFont, frenchMinutes, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
         currentX += minutesWidth;
 
         dc.setColor(secondsFontColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(currentX, centerY, secondsFont, seconds, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(currentX, centerY, secondsFont, frenchSeconds, Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER);
         
         _drawStandardTime(dc, hour, minutes, seconds);
 
