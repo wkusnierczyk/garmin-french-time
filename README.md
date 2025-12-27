@@ -6,6 +6,8 @@ A minimalist, elegant, typography-focused Garmin Connect IQ watch face that disp
 ![French time](resources/graphics/french-standard.png)
 ![French time](resources/graphics/french-color.png)
 
+Available from [Garmin Connect IQ Developer portal](https://apps.garmin.com/apps/a42c7074-1059-4012-99cc-dee244688145).
+
 ## Contents
 
 * [French Revolutionary time](#french-revolutionary-time)
