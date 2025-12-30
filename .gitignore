@@ -16,6 +16,9 @@ package-lock.json
 package.json
 test_build-settings.json
 
+# Intermediate output files
+fonts.md
+
 # Build artifacts
 *.prg
 *.prg.*
