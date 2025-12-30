@@ -30,32 +30,31 @@ The hours, minutes, and seconds are displayed with Ubuntu Bold, Medium, and Regu
 The watch face provides an option to display the hour, minutes, and seconds using the French flag colors.
 Note that for better readability, the color blue used here is somewhat bighter than the official color (Pantone A 503; RGB used `0000D5` vs official `000091`), while the colors white (Pantone A 665) and red (Pantone  A 805) are as the official colors (RGB `FFFFFF` and `E1000F`, respectively). 
 
-## Project structure
 
-```bash
-FrenchTime
-├── LICENSE                        # MIT license
-├── Makefile                       # Convenience makefile
-├── manifest.xml
-├── monkey.jungle
-├── README.md
-├── resources
-│   ├── drawables
-│   │   ├── drawables.xml
-│   │   └── launcher_icon.svg
-│   ├── fonts
-│   │   ├── fonts.xml              # Font map 
-│   │   ├── [ttf, fnt, png fonts]  # Source (ttf) and converted (fnt, png) fonts
-│   │   └── UFL.txt                # Ubuntu font license
-│   ├── layouts
-│   │   └── layout.xml
-│   └── strings
-│       └── strings.xml
-└── source
-    ├── FrenchTime.mc
-    ├── FrenchTimeApp.mc
-    └── FrenchTimeView.mc
-```
+## Fonts
+
+The French Time watch face uses custom fonts:
+
+* [Ubuntu](https://fonts.google.com/specimen/SUSE+Mono) for hours (Ubuntu bold), minutes (Ubuntu medium), and seconds (Ubuntu regular).
+* [Ubuntu](https://fonts.google.com/specimen/Ubuntu) for standard time (Ubuntu regular).
+
+The font development process was as follows:
+
+* The fonts were downloaded from [Google Fonts](https://fonts.google.com/) as True Type  (`.ttf`) fonts.
+* The fonts were converted to bitmaps as `.fnt` and `.png` pairs using the open source command-line [`ttf2bmp`](https://github.com/wkusnierczyk/ttf2bmp) converter.
+* The font sizes were established to match the Garmin Fenix 7X Solar watch 280x280 pixel screen resolution.
+* The fonts were then scaled proportionally to match other screen sizes available on Garmin watches with round screens using the included [utility script](utils/generate_fonts.py).
+
+The table below lists all font sizes provided for the supported screen resolutions.
+
+| Element       | Font           | 218 | 240 | 260 | 280 | 360 | 390 | 416 | 454 |
+| :------------ | :------------- | --: | --: | --: | --: | --: | --: | --: | --: |
+| Hours         | Ubuntu bold    |  54 |  60 |  65 |  70 |  90 |  98 | 104 | 114 |
+| Minutes       | Ubuntu medium  |  54 |  60 |  65 |  70 |  90 |  98 | 104 | 114 |
+| Seconds       | Ubuntu regular |  54 |  60 |  65 |  70 |  90 |  98 | 104 | 114 |
+| Standard time | Ubuntu regular |  23 |  26 |  28 |  30 |  39 |  42 |  45 |  49 |
+
+---
 
 ## Build, test, deploy
 
