@@ -5,7 +5,7 @@ import Toybox.Lang;
 
 module FrenchTime {
 
-    function getDecimalHours(clockTime as System.ClockTime) as String {
+    function getDecimalHour(clockTime as System.ClockTime) as String {
         var totalDecimalSeconds = _getTotalDecimalSeconds(clockTime);
         var decimalHours = (totalDecimalSeconds / 10000).toNumber();
         return decimalHours.format("%d");

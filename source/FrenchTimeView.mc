@@ -31,7 +31,7 @@ class FrenchTimeView extends WatchUi.WatchFace {
         var minutes = clockTime.min;
         var seconds = clockTime.sec;
 
-        var frenchHour = FrenchTime.getDecimalHours(clockTime);
+        var frenchHour = FrenchTime.getDecimalHour(clockTime);
         var frenchMinutes = FrenchTime.getDecimalMinutes(clockTime);
         var frenchSeconds = FrenchTime.getDecimalSeconds(clockTime);
 
