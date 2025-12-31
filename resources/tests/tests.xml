@@ -1,0 +1,11 @@
+<resources>
+    <jsonData id="UnitTests">
+        [
+            { "name": "Midnight",     "input": "00:00:00", "expected": "00000" },
+            { "name": "Noon",         "input": "12:00:00", "expected": "50000" },
+            { "name": "EndOfDay",     "input": "23:59:59", "expected": "99998" },
+            { "name": "UserBugCase",  "input": "09:07:00", "expected": "37986" },
+            { "name": "OneAM",        "input": "01:00:00", "expected": "04166" }
+        ]
+    </jsonData>
+</resources>
