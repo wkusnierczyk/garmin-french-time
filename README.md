@@ -7,7 +7,7 @@ A minimalist, elegant, nerdy Garmin Connect IQ watch face that displays the curr
 Available from [Garmin Connect IQ Developer portal](https://apps.garmin.com/apps/a42c7074-1059-4012-99cc-dee244688145).
 
 > **Note**  
-> Swatch Time is part of a [collection of unconventional Garmin watch faces](https://github.com/wkusnierczyk/garmin-watch-faces). It has been developed for fun, as a proof of concept, and as a learning experience.
+> French Time is part of a [collection of unconventional Garmin watch faces](https://github.com/wkusnierczyk/garmin-watch-faces). It has been developed for fun, as a proof of concept, and as a learning experience.
 > It is shared _as is_ as an open source project, with no commitment to long term maintenance and further feature development.
 >
 > Please use [issues](https://github.com/wkusnierczyk/garmin-french-time/issues) to provide bug reports or feature requests.  
