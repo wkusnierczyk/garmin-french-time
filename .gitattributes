@@ -67,3 +67,4 @@ resources-rectangle-320x360/fonts/Ubuntu-Regular-80.png filter=lfs diff=lfs merg
 resources-semi-round-215x180/fonts/Ubuntu-Medium-45.png filter=lfs diff=lfs merge=lfs -text
 resources-semi-round-215x180/fonts/Ubuntu-Bold-45.png filter=lfs diff=lfs merge=lfs -text
 resources-semi-round-215x180/fonts/Ubuntu-Regular-19.png filter=lfs diff=lfs merge=lfs -text
+resources/graphics/FrenchHero-small.png filter=lfs diff=lfs merge=lfs -text

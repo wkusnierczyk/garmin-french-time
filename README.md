@@ -1,16 +1,24 @@
 # Garmin French Time
 
-A minimalist, elegant, typography-focused Garmin Connect IQ watch face that displays the current time as French Revolutionary time.
+A minimalist, elegant, nerdy Garmin Connect IQ watch face that displays the current time as French Revolutionary time.
 
-![French time](resources/graphics/french.png)
-![French time](resources/graphics/french-standard.png)
-![French time](resources/graphics/french-color.png)
+![French Time](resources/graphics/FrenchHero-small.png)
 
 Available from [Garmin Connect IQ Developer portal](https://apps.garmin.com/apps/a42c7074-1059-4012-99cc-dee244688145).
+
+> **Note**  
+> Swatch Time is part of a [collection of unconventional Garmin watch faces](https://github.com/wkusnierczyk/garmin-watch-faces). It has been developed for fun, as a proof of concept, and as a learning experience.
+> It is shared _as is_ as an open source project, with no commitment to long term maintenance and further feature development.
+>
+> Please use [issues](https://github.com/wkusnierczyk/garmin-french-time/issues) to provide bug reports or feature requests.  
+> Please use [discussions](https://github.com/wkusnierczyk/garmin-french-time/discussions) for any other comments.
+>
+> All feedback is wholeheartedly welcome.
 
 ## Contents
 
 * [French Revolutionary time](#french-revolutionary-time)
+* [Features](#features)
 * [Project structure](#project-structure)
 * [Build, test, deploy](#build-test-deploy)
 
@@ -31,6 +39,17 @@ The watch face provides an option to display the hour, minutes, and seconds usin
 Note that for better readability, the color blue used here is somewhat bighter than the official color (Pantone A 503; RGB used `0000D5` vs official `000091`), while the colors white (Pantone A 665) and red (Pantone  A 805) are as the official colors (RGB `FFFFFF` and `E1000F`, respectively). 
 
 
+## Features
+
+The French Time watch face supports the following features:
+
+|Screenshot|Description|
+|-|:-|
+|![French time](resources/graphics/french.png)|**French time**<br/> Current time is diplayed as French Revolutionary time, with three groups of digits: hours, minutes, and seconds, in fonts of varying thickness (bold,medium, regular, respectively) and colors (white, light gray, dark gray, respectively).|
+|![French time](resources/graphics/french-standard.png)|**Standard time**<br/> A setting in the Customize menu enables the user to toggle the standard time display on and off. The standard time is shown below the French time in a smaller, dimmer font.|
+![French time](resources/graphics/french-color.png)|**French flag colors**<br /> A setting in the Customize menu enables the user to change the colors in which the French time is displayed: toggle between the default white-gray and using the French flag colors.|
+
+
 ## Fonts
 
 The French Time watch face uses custom fonts:
@@ -38,12 +57,19 @@ The French Time watch face uses custom fonts:
 * [Ubuntu](https://fonts.google.com/specimen/SUSE+Mono) for hours (Ubuntu bold), minutes (Ubuntu medium), and seconds (Ubuntu regular).
 * [Ubuntu](https://fonts.google.com/specimen/Ubuntu) for standard time (Ubuntu regular).
 
-The font development process was as follows:
+
+> The development of Garmin watch faces motivated the implementation of two useful tools:
+> * A TTF to FNT+PNG converter ([`ttf2bmp`](https://github.com/wkusnierczyk/ttf2bmp)).  
+> Garmin watches use non-scalable fixed-size bitmap fonts, and cannot handle variable size True Type fonts directly.
+> * An font scaler automation tool ([`garmin-font-scaler`](https://github.com/wkusnierczyk/garmin-font-scaler)).  
+> Garmin watches come in a variety of shapes and resolutions, and bitmap fonts need to be scaled for each device proportionally to its resolution.
+
+The font development proceeded as follows:
 
 * The fonts were downloaded from [Google Fonts](https://fonts.google.com/) as True Type  (`.ttf`) fonts.
 * The fonts were converted to bitmaps as `.fnt` and `.png` pairs using the open source command-line [`ttf2bmp`](https://github.com/wkusnierczyk/ttf2bmp) converter.
 * The font sizes were established to match the Garmin Fenix 7X Solar watch 280x280 pixel screen resolution.
-* The fonts were then scaled proportionally to match other screen sizes available on Garmin watches with round screens using the included [utility script](utils/generate_fonts.py).
+* The fonts were then scaled proportionally to match other screen sizes available on Garmin watches using the [`garmin-font-scaler`](https://github.com/wkusnierczyk/garmin-font-scaler) tool.
 
 The table below lists all font sizes provided for the supported screen resolutions.
 
@@ -116,15 +142,19 @@ Consult [Monkey C Visual Studio Code Extension](https://developer.garmin.com/con
 
 You can use the included `Makefile` to conveniently trigger some of the actions from the command line.
 
+
 ```bash
 # build binaries from sources
 make build
 
-# run unit tests
+# run unit tests -- note: requires the simulator to be running
 make test
 
-# run the simulation
+# run the simulation 
 make run
+
+# clean up the project directory
+make clean
 ```
 
 To sideload your application to your Garmin watch, see [developer.garmin.com/connect-iq/connect-iq-basics/your-first-app](https://developer.garmin.com/connect-iq/connect-iq-basics/your-first-app/).
