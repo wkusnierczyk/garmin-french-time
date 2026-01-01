@@ -47,12 +47,61 @@ The font development process was as follows:
 
 The table below lists all font sizes provided for the supported screen resolutions.
 
-| Element       | Font           | 218 | 240 | 260 | 280 | 360 | 390 | 416 | 454 |
-| :------------ | :------------- | --: | --: | --: | --: | --: | --: | --: | --: |
-| Hours         | Ubuntu bold    |  54 |  60 |  65 |  70 |  90 |  98 | 104 | 114 |
-| Minutes       | Ubuntu medium  |  54 |  60 |  65 |  70 |  90 |  98 | 104 | 114 |
-| Seconds       | Ubuntu regular |  54 |  60 |  65 |  70 |  90 |  98 | 104 | 114 |
-| Standard time | Ubuntu regular |  23 |  26 |  28 |  30 |  39 |  42 |  45 |  49 |
+| Resolution |    Shape     |    Element    |      Font      | Size |
+| ---------: | :----------- | :------------ | :------------- | ---: |
+|  148 x 205 | rectangle    | Hours         | Ubuntu bold    |   37 |
+|  148 x 205 | rectangle    | Minutes       | Ubuntu medium  |   37 |
+|  148 x 205 | rectangle    | Seconds       | Ubuntu regular |   37 |
+|  148 x 205 | rectangle    | Standard time | Ubuntu regular |   16 |
+|  176 x 176 | semi-octagon | Hours         | Ubuntu bold    |   44 |
+|  176 x 176 | semi-octagon | Minutes       | Ubuntu medium  |   44 |
+|  176 x 176 | semi-octagon | Seconds       | Ubuntu regular |   44 |
+|  176 x 176 | semi-octagon | Standard time | Ubuntu regular |   19 |
+|  215 x 180 | semi-round   | Hours         | Ubuntu bold    |   45 |
+|  215 x 180 | semi-round   | Minutes       | Ubuntu medium  |   45 |
+|  215 x 180 | semi-round   | Seconds       | Ubuntu regular |   45 |
+|  215 x 180 | semi-round   | Standard time | Ubuntu regular |   19 |
+|  218 x 218 | round        | Hours         | Ubuntu bold    |   54 |
+|  218 x 218 | round        | Minutes       | Ubuntu medium  |   54 |
+|  218 x 218 | round        | Seconds       | Ubuntu regular |   54 |
+|  218 x 218 | round        | Standard time | Ubuntu regular |   23 |
+|  240 x 240 | round        | Hours         | Ubuntu bold    |   60 |
+|  240 x 240 | rectangle    | Hours         | Ubuntu bold    |   60 |
+|  240 x 240 | round        | Minutes       | Ubuntu medium  |   60 |
+|  240 x 240 | rectangle    | Minutes       | Ubuntu medium  |   60 |
+|  240 x 240 | round        | Seconds       | Ubuntu regular |   60 |
+|  240 x 240 | rectangle    | Seconds       | Ubuntu regular |   60 |
+|  240 x 240 | round        | Standard time | Ubuntu regular |   26 |
+|  240 x 240 | rectangle    | Standard time | Ubuntu regular |   26 |
+|  260 x 260 | round        | Hours         | Ubuntu bold    |   65 |
+|  260 x 260 | round        | Minutes       | Ubuntu medium  |   65 |
+|  260 x 260 | round        | Seconds       | Ubuntu regular |   65 |
+|  260 x 260 | round        | Standard time | Ubuntu regular |   28 |
+|  280 x 280 | round        | Hours         | Ubuntu bold    |   70 |
+|  280 x 280 | round        | Minutes       | Ubuntu medium  |   70 |
+|  280 x 280 | round        | Seconds       | Ubuntu regular |   70 |
+|  280 x 280 | round        | Standard time | Ubuntu regular |   30 |
+|  320 x 360 | rectangle    | Hours         | Ubuntu bold    |   80 |
+|  320 x 360 | rectangle    | Minutes       | Ubuntu medium  |   80 |
+|  320 x 360 | rectangle    | Seconds       | Ubuntu regular |   80 |
+|  320 x 360 | rectangle    | Standard time | Ubuntu regular |   34 |
+|  360 x 360 | round        | Hours         | Ubuntu bold    |   90 |
+|  360 x 360 | round        | Minutes       | Ubuntu medium  |   90 |
+|  360 x 360 | round        | Seconds       | Ubuntu regular |   90 |
+|  360 x 360 | round        | Standard time | Ubuntu regular |   39 |
+|  390 x 390 | round        | Hours         | Ubuntu bold    |   98 |
+|  390 x 390 | round        | Minutes       | Ubuntu medium  |   98 |
+|  390 x 390 | round        | Seconds       | Ubuntu regular |   98 |
+|  390 x 390 | round        | Standard time | Ubuntu regular |   42 |
+|  416 x 416 | round        | Hours         | Ubuntu bold    |  104 |
+|  416 x 416 | round        | Minutes       | Ubuntu medium  |  104 |
+|  416 x 416 | round        | Seconds       | Ubuntu regular |  104 |
+|  416 x 416 | round        | Standard time | Ubuntu regular |   45 |
+|  454 x 454 | round        | Hours         | Ubuntu bold    |  114 |
+|  454 x 454 | round        | Minutes       | Ubuntu medium  |  114 |
+|  454 x 454 | round        | Seconds       | Ubuntu regular |  114 |
+|  454 x 454 | round        | Standard time | Ubuntu regular |   49 |
+
 
 ---
 
