@@ -24,6 +24,7 @@ Desktop:
  - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
  - Version [e.g. 22]
+
 Mobile:
  - Device: [e.g. iPhone6]
  - OS: [e.g. iOS8.1]
