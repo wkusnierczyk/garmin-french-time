@@ -1,0 +1,18 @@
+[
+    {
+        "fontCharset": "0123456789",
+        "fontId": "HoursFont"
+    },
+    {
+        "fontCharset": "0123456789",
+        "fontId": "MinutesFont"
+    },
+    {
+        "fontCharset": "0123456789",
+        "fontId": "SecondsFont"
+    },
+    {
+        "fontCharset": "0123456789: ",
+        "fontId": "StandardTimeFont"
+    }
+]

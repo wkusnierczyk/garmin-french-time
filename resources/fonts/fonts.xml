@@ -7,37 +7,8 @@
         <font id="StandardTimeFont" filename="Ubuntu-Regular-30.fnt" antialias="true" />
     </fonts>
 
-    <jsonData id="FontCharsets">[
-        {
-            "fontId": "HoursFont",
-            "fontCharset": "0123456789"
-        },
-        {
-            "fontId": "MinutesFont",
-            "fontCharset": "0123456789"
-        },
-        {
-            "fontId": "SecondsFont",
-            "fontCharset": "0123456789"
-        },
-        {
-            "fontId": "StandardTimeFont",
-            "fontCharset": "0123456789: "
-        }
-    ]</jsonData>
+    <jsonData id="FontCharsets" filename="charsets.json" />
 
-    <jsonData id="ScreenDiameters">{
-        "referenceDiameter": 280,
-        "targetDiameters": [
-            218, 
-            240, 
-            260, 
-            280, 
-            360, 
-            390, 
-            416, 
-            454
-        ]
-    }</jsonData>
+    <jsonData id="ScreenResolutions" filename="resolutions.json"/>
 
 </resources>
